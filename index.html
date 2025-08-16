@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROTECH</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-700 via-pink-500 to-indigo-600 text-white">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-purple-900/80 backdrop-blur-sm py-4">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold">
+        <a href="#home" class="hover:text-pink-300 transition">PROTECH</a>
+      </h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#features" class="hover:text-pink-200 transition">Services</a>
+        <a href="#pricing" class="hover:text-pink-200 transition">Pricing</a>
+        <a href="#testimonials" class="hover:text-pink-200 transition">Testimonials</a>
+        <a href="#contact" class="hover:text-pink-200 transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-purple-800">
+      <a href="#features" class="block py-2 px-4 hover:bg-purple-700 transition">Services</a>
+      <a href="#pricing" class="block py-2 px-4 hover:bg-purple-700 transition">Pricing</a>
+      <a href="#testimonials" class="block py-2 px-4 hover:bg-purple-700 transition">Testimonials</a>
+      <a href="#contact" class="block py-2 px-4 hover:bg-purple-700 transition">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-28 px-4 relative">
+    <!-- Background blobs -->
+    <div class="absolute top-0 left-0 w-72 h-72 bg-pink-400/30 rounded-full filter blur-3xl -z-10"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-indigo-400/30 rounded-full filter blur-3xl -z-10"></div>
+
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg opacity-0 translate-y-5 animate-on-load">
+      Power Your Business with PROTECH
+    </h2>
+    <p class="text-lg max-w-xl mx-auto mb-8 text-white/80 drop-shadow-sm opacity-0 translate-y-5 animate-on-load">
+      The all-in-one Solution to your business website need.
+    </p>
+    <a href="#pricing"
+       class="bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 hover:from-pink-500 hover:to-purple-500 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition transform hover:scale-105 opacity-0 translate-y-5 animate-on-load">
+      Get Started
+    </a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="features" class="py-20 px-4 bg-white text-gray-900 rounded-t-3xl">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-12 opacity-0 translate-y-10 animate-on-scroll">
+        Services we offer to facilitate your business growth
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-50 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 opacity-0 translate-y-10 animate-on-scroll">
+          <h4 class="text-xl font-semibold mb-2">Website Development</h4>
+          <p>Building responsive, modern, and user-friendly websites tailored to your brand. From simple landing pages to complex platforms, we bring your online presence to life.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 opacity-0 translate-y-10 animate-on-scroll">
+          <h4 class="text-xl font-semibold mb-2">SEO</h4>
+          <p>Optimize your website to rank higher on search engines, attract more visitors, and increase conversions with proven SEO strategies.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 opacity-0 translate-y-10 animate-on-scroll">
+          <h4 class="text-xl font-semibold mb-2">24/7 Support</h4>
+          <p>Reliable website support and maintenance to ensure your site stays secure, fast, and up-to-date, giving you peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 px-4 text-white text-center">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-12 opacity-0 translate-y-10 animate-on-scroll">
+        What Our Clients Say
+      </h3>
+      <div class="space-y-8">
+        <blockquote class="bg-purple-800/60 p-6 rounded-xl shadow-lg opacity-0 translate-y-10 animate-on-scroll">
+          <p class="italic mb-2 drop-shadow-sm">"Working with PROTECH transformed our online presence! Our website is sleek, fast, and exactly what we envisioned. The whole process was smooth and stress-free."</p>
+          <cite>— Kelvin T., CEO of Innovate_X</cite>
+        </blockquote>
+        <blockquote class="bg-purple-800/60 p-6 rounded-xl shadow-lg opacity-0 translate-y-10 animate-on-scroll">
+          <p class="italic mb-2 drop-shadow-sm">"Thanks to their SEO strategies, our traffic and sales have noticeably increased. They really understand how to make your website work for you."</p>
+          <cite>— Marigold O., Entrepreneur</cite>
+        </blockquote>
+        <blockquote class="bg-purple-800/60 p-6 rounded-xl shadow-lg opacity-0 translate-y-10 animate-on-scroll">
+          <p class="italic mb-2 drop-shadow-sm">"Their support team is always there when we need them. Quick, professional, and reliable, I finally feel confident our website is in good hands."</p>
+          <cite>— Samson A., Startup Founder</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 px-4 bg-white text-gray-900 rounded-t-3xl">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-12 opacity-0 translate-y-10 animate-on-scroll">
+        Services Pricing
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 border rounded-xl text-center shadow-lg hover:scale-105 transition-transform duration-300 opacity-0 translate-y-10 animate-on-scroll">
+          <h4 class="text-xl font-semibold mb-4">Basic Plan</h4>
+          <p class="text-4xl font-bold mb-4">$150</p>
+          <ul class="mb-6 space-y-2">
+            <li>✔ Fully Functional Website</li>
+            <li>✔ Basic SEO setup</li>
+            <li>✔ Email support</li>
+          </ul>
+          <a href="#" class="bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 text-white px-6 py-2 rounded-full hover:scale-105 transform transition">
+            Choose Plan
+          </a>
+        </div>
+        <div class="p-6 border-2 border-purple-700 rounded-xl text-center shadow-lg hover:scale-105 transition-transform duration-300 opacity-0 translate-y-10 animate-on-scroll">
+          <h4 class="text-xl font-semibold mb-4">Standard Plan</h4>
+          <p class="text-4xl font-bold mb-4">$400</p>
+          <ul class="mb-6 space-y-2">
+            <li>✔ Website development</li>
+            <li>✔ Advance SEO optimization</li>
+            <li>✔ Email support & 2 months maintenance</li>
+          </ul>
+          <a href="#" class="bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 text-white px-6 py-2 rounded-full hover:scale-105 transform transition">
+            Choose Plan
+          </a>
+        </div>
+        <div class="p-6 border rounded-xl text-center shadow-lg hover:scale-105 transition-transform duration-300 opacity-0 translate-y-10 animate-on-scroll">
+          <h4 class="text-xl font-semibold mb-4">Premium Plan</h4>
+          <p class="text-4xl font-bold mb-4">$700</p>
+          <ul class="mb-6 space-y-2">
+            <li>✔ Unlimited pages & custom features</li>
+            <li>✔ Dedicated manager</li>
+            <li>✔ Full SEO strategy & analytics</li>
+            <li>✔ 5 months priority support & maintenance</li>
+          </ul>
+          <a href="#" class="bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 text-white px-6 py-2 rounded-full hover:scale-105 transform transition">
+            Choose Plan
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <!--section id="contact" class="py-20 px-4 text-center text-white">
+    <h3 class="text-3xl font-bold mb-4 opacity-0 translate-y-10 animate-on-scroll">Ready to Get Started?</h3>
+    <p class="mb-6 text-white/80 opacity-0 translate-y-10 animate-on-scroll">Contact Us now, to get your business' online presence journey started.</p>
+    <a href="#" class="bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 hover:from-pink-500 hover:to-purple-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg transform hover:scale-105 transition opacity-0 translate-y-10 animate-on-scroll">
+      CONTACT US
+    </a>
+  </section-->
+  <!-- Uodated Contact Section -->
+<section id="contact" class="bg-gray-900 py-16 px-6 text-center">
+  <div class="max-w-3xl mx-auto">
+    <!-- Heading -->
+    <h2 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 mb-4">
+      Contact Us
+    </h2>
+    <p class="text-gray-400 mb-10 text-lg">
+       Reach out to us through any of your prefered Socials ;
+    </p>
+
+    <!-- Social Buttons -->
+    <div class="flex justify-center space-x-6">
+      <!-- Email -->
+      <a href="mailto:oladosuopey946@gmail.com" 
+         class="p-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white text-2xl shadow-lg transform hover:scale-110 transition">
+         📧
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/2348166381689" target="_blank" 
+         class="p-4 rounded-full bg-green-500 text-white text-2xl shadow-lg transform hover:scale-110 transition">
+         💬
+      </a>
+
+      <!-- Telegram -->
+      <a href="https://t.me/Opeyemye" target="_blank" 
+         class="p-4 rounded-full bg-blue-500 text-white text-2xl shadow-lg transform hover:scale-110 transition">
+         📱
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-purple-200 bg-purple-900">
+    <p>&copy; 2025 PROTECH. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+
+    // Scroll Animations
+    const scrollElements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.remove('opacity-0', 'translate-y-10', 'translate-y-5');
+          entry.target.classList.add('opacity-100', 'translate-y-0', 'transition-all', 'duration-700', 'ease-out');
+        }
+      });
+    }, { threshold: 0.2 });
+    scrollElements.forEach(el => observer.observe(el));
+
+    // Animate hero on page load
+    const heroElements = document.querySelectorAll('#home .animate-on-load');
+    heroElements.forEach((el,i) => {
+      setTimeout(() => {
+        el.classList.remove('opacity-0','translate-y-5');
+        el.classList.add('opacity-100','translate-y-0','transition-all','duration-1000','ease-out');
+      }, i*300);
+    });
+  </script>
+</body>
+</html>
